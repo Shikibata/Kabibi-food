@@ -1,6 +1,16 @@
 footer {
   background-image: url("assets/img/footer/img-ng-footer.jpg");
   color: hsl(184deg, 7%, 59%);
+  display: flex;
+}
+footer .footer__section--logo {
+  display: flex;
+  justify-content: center;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+footer .footer__section--logo img {
+  height: 4.5em;
 }
 footer .footer__container {
   display: flex;
@@ -24,24 +34,54 @@ footer .footer__container .footer__section a {
   color: hsl(184deg, 7%, 59%);
 }
 footer .footer__container--bottom {
-  padding-bottom: 3em;
+  padding-bottom: 2em;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10%;
+  width: 80%;
+}
+footer hr {
+  margin-top: 3em;
+  border: 1px solid #d7d7d7;
+  opacity: 20%;
+  width: 80%;
+}
+footer .footer__bottom--hr {
+  text-align: center;
+  height: 1.6em;
+}
+footer .footer__bottom--hr img {
+  position: relative;
+  top: -3em;
+  height: 6em;
+}
+footer p {
+  font-size: 0.9em;
 }
 footer em {
   color: hsl(40deg, 46%, 60%);
 }
-footer svg {
+footer .footer__bottom--right {
+  display: flex;
+  justify-content: flex-end;
+}
+footer .footer__bottom--right ul {
+  display: flex;
+}
+footer .footer__bottom--right .fa, footer .footer__bottom--right .fab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 2em;
-  background-color: #fff;
+  background-color: hsl(192deg, 7%, 14%);
   border-radius: 50%;
   height: 2em;
+  color: white;
+  margin-left: 1em;
 }
-footer hr {
-  width: 85%;
-  opacity: 20%;
-  margin-top: 1em;
-  margin-bottom: 1em;
+footer .footer__bottom--right .fa:hover, footer .footer__bottom--right .fab:hover {
+  background-color: hsl(40deg, 46%, 60%);
 }
 
 html, body, div, span, applet, object, iframe,
