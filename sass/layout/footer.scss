@@ -1,0 +1,57 @@
+@import '../variables.scss';
+
+footer {
+    background-image: url('assets/img/footer/img-ng-footer.jpg');
+    color: $color_greyFooter;
+
+    .footer__container {
+        display: flex;
+        justify-content: center;
+        
+        .footer__section {
+            
+
+            h4 {
+                color:#fff;
+                font-size:16px;
+                text-transform:uppercase;
+                margin-top:5px;
+                letter-spacing:2px;
+            }
+                ul {
+                    width: 10em;
+                }
+                .footer__section--Paragraph {
+                    width: 20em;
+                }
+                
+
+            a {
+                text-decoration: none;
+                color: $color_greyFooter;
+            }
+        } 
+    }
+    .footer__container--bottom {
+        padding-bottom: 3em;
+        display: flex;
+        justify-content: center;
+    }
+
+    em {
+        color: $color_gold;
+    }
+    svg {
+        width: 2em;
+        background-color: #fff;
+        border-radius: 50%;
+        height: 2em;
+    }
+
+    hr {
+        width: 85%;
+        opacity: 20%;
+        margin-top: 1em;
+        margin-bottom: 1em
+    }
+}        
