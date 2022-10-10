@@ -4,51 +4,59 @@ footer {
     background-image: url('assets/img/footer/img-ng-footer.jpg');
     color: $color_greyFooter;
 
-    .footer__container {
+    &.footer__logo {
+        display: flex;
+        justify-content: center;
+
+        h2 {
+            text-align: center;
+        }
+    }   
+    &.footer__container {
         display: flex;
         justify-content: center;
         
-        .footer__section {
+        &.footer__section {
             
 
-            h4 {
+            &h4 {
                 color:#fff;
                 font-size:16px;
                 text-transform:uppercase;
                 margin-top:5px;
                 letter-spacing:2px;
             }
-                ul {
+                &ul {
                     width: 10em;
                 }
-                .footer__section--Paragraph {
+                &.footer__section--Paragraph {
                     width: 20em;
                 }
                 
 
-            a {
+            &a {
                 text-decoration: none;
                 color: $color_greyFooter;
             }
         } 
     }
-    .footer__container--bottom {
+    &.footer__container--bottom {
         padding-bottom: 3em;
         display: flex;
         justify-content: center;
     }
 
-    em {
+    &em {
         color: $color_gold;
     }
-    svg {
+    &svg {
         width: 2em;
         background-color: #fff;
         border-radius: 50%;
         height: 2em;
     }
 
-    hr {
+    &hr {
         width: 85%;
         opacity: 20%;
         margin-top: 1em;
