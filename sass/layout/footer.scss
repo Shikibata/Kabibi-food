@@ -45,19 +45,25 @@ footer {
                 ul {
                     width: 17em;
 
+                    li {
+                        padding-bottom: 1em;
+                        font-family: 'Open Sans', sans-serif;
+                        font-weight: 200;
+                    }
                 }
 
 
                 .footer__section--Paragraph {
-                    width: 20em;
+                    width: 21em;
                     line-height: 1.8;
+                    font-family: 'Open Sans', sans-serif;
+                    font-weight: 200;
                 }
-                
 
                 a {
                     text-decoration: none;
                     color: $color_greyFooter;
-                    line-height: 2;
+                    line-height: 1.7;
                 }
 
                 .footer__section--label {
@@ -119,7 +125,7 @@ footer {
     hr {
         margin-top: 3em;
         border: 1px solid #d7d7d7;
-        opacity: 20%;
+        opacity: 6%;
         width: 80%;
     }
     
@@ -130,8 +136,8 @@ footer {
     
     .footer__bottom--hr img {
         position: relative;
-        top: -3em;
-        height: 6em;
+        top: -2em;
+        height: 4.5em;
     }
     .copyright {
         font-size: 0.9em;
@@ -152,10 +158,10 @@ footer {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 2em;
+            width: 1.5em;
             background-color: $color_bgLogo;
             border-radius: 50%;
-            height: 2em;
+            height: 1.5em;
             color: white;
             margin-left: 1em;
         }
