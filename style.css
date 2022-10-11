@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
 @font-face {
   font-family: Revans;
   src: url(/font/Revans-Medium.ttf);
@@ -226,6 +227,61 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+.section__p {
+  text-align: center;
+}
+
+.section__h2 {
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.section__chefs .container__chefs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.section__blog .list-brand {
+  padding-left: 12.5%;
+  width: 75%;
+  padding-bottom: 4em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section--titre, .section__blog--titre {
+  font-size: 15rem;
+  font-weight: 400;
+  line-height: 1.2;
+  width: 5em;
+  opacity: 0.1;
+}
+
+.section__blog--titre {
+  color: hsl(40deg, 46%, 60%);
+}
+
+.container__article {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  align-items: center;
+  width: 70%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 1em;
+}
+.container__article article {
+  width: 17em;
+  height: 21em;
+  background-color: aqua;
+}
+.container__article article img {
+  width: 17em;
 }
 
 /*# sourceMappingURL=style.css.map */
