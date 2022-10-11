@@ -1,16 +1,23 @@
 @import '../variables.scss';
 
+@font-face {
+    font-family: Revans;
+    src: url(/font/Revans-Medium.ttf);
+}
 
 footer {
     background-image: url('assets/img/footer/img-ng-footer.jpg');
+    background-position: center;
+    background-size: cover;
     color: $color_greyFooter;
     display: flex;
+    flex: wrap;
 
     .footer__section--logo {
         display: flex;
         justify-content: center;
-        padding-top: 3em;
-        padding-bottom: 3em;
+        padding-top: 4em;
+        padding-bottom: 4em;
 
         img {
             height: 4.5em;
@@ -22,7 +29,8 @@ footer {
         justify-content: center;
         
         .footer__section {
-
+            width: 14em;
+            font-size: 1em;
 
             h4 {
                 color:#fff;
@@ -30,21 +38,74 @@ footer {
                 text-transform:uppercase;
                 margin-top:5px;
                 letter-spacing:2px;
+                margin-bottom: 1em;
+                font-family: 'Revans';
+                font-weight: 200;
             }
                 ul {
-                    width: 10em;
+                    width: 17em;
+
                 }
+
+
                 .footer__section--Paragraph {
                     width: 20em;
+                    line-height: 1.8;
                 }
                 
 
-            a {
-                text-decoration: none;
-                color: $color_greyFooter;
+                a {
+                    text-decoration: none;
+                    color: $color_greyFooter;
+                    line-height: 2;
+                }
+
+                .footer__section--label {
+                display: flex;
+                margin-top: 2em;
+
+                    .section__label--input {
+                        padding: 1.2em;
+                        border: none;
+                    }
+
+                    .section__label--button {
+                        width: 4em;
+                        background-color: $color_gold;
+                        border: none;
+
+                        .fa-solid {
+                            color: white;
+                        }
+                    }
             }
         } 
     }
+
+    .footer__container--top {
+        display: flex;
+        width: 80%;
+        padding-left: 10%;
+        justify-content: space-between;
+
+        .footer__section--three {
+            width: 33em;
+        }
+
+        .footer__section--four {
+            
+
+            .fa {
+                color: $color_gold;
+                margin-right: 0.6em;
+            }
+
+            .fa-phone {
+                transform: rotate(270deg);
+            }
+        }
+    }
+
     .footer__container--bottom {
         padding-bottom: 2em;
         display: flex;
@@ -72,7 +133,7 @@ footer {
         top: -3em;
         height: 6em;
     }
-    p {
+    .copyright {
         font-size: 0.9em;
     }
     em {
@@ -103,4 +164,54 @@ footer {
         }
     }
     
+}
+
+
+@media (max-width: 800px) {
+    footer {
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+        .footer__section--logo {
+            display: flex;
+            justify-content: center;
+            padding-top: 2em;
+            padding-bottom: 2em;
+
+            img {
+                height: 4.5em;
+            }
+        }
+    
+        .footer__container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+            .footer__section {
+                padding-bottom: 3em;
+                width: 10em;
+                font-size: 1em;
+        }
+    }
+    .footer__bottom--hr { 
+        margin-bottom: 3em;
+    }
+
+    .footer__container--bottom {
+        justify-content: center;
+
+    }
+}
+
+@media (max-width: 1300px) {
+    .footer__bottom--hr { 
+        margin-bottom: 3em;
+    }
+
+    .footer__container--bottom {
+        justify-content: center;
+
+    }
 }
