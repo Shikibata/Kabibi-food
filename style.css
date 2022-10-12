@@ -1,3 +1,185 @@
+
+@font-face {
+  font-family: Revans;
+  src: url(/font/Revans-Medium.ttf);
+}
+footer {
+  background-image: url("assets/img/footer/img-ng-footer.jpg");
+  background-position: center;
+  background-size: cover;
+  color: hsl(184deg, 7%, 59%);
+  display: flex;
+  flex: wrap;
+}
+footer .footer__section--logo {
+  display: flex;
+  justify-content: center;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+footer .footer__section--logo img {
+  height: 4.5em;
+}
+footer .footer__container {
+  display: flex;
+  justify-content: center;
+}
+footer .footer__container .footer__section {
+  width: 14em;
+  font-size: 1em;
+}
+footer .footer__container .footer__section h4 {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: 2px;
+  margin-bottom: 1em;
+  font-family: "Revans";
+  font-weight: 200;
+}
+footer .footer__container .footer__section ul {
+  width: 17em;
+}
+footer .footer__container .footer__section ul li {
+  padding-bottom: 1em;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 200;
+}
+footer .footer__container .footer__section .footer__section--Paragraph {
+  width: 21em;
+  line-height: 1.8;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 200;
+}
+footer .footer__container .footer__section a {
+  text-decoration: none;
+  color: hsl(184deg, 7%, 59%);
+  line-height: 1.7;
+}
+footer .footer__container .footer__section .footer__section--label {
+  display: flex;
+  margin-top: 2em;
+}
+footer .footer__container .footer__section .footer__section--label .section__label--input {
+  padding: 1.2em;
+  border: none;
+}
+footer .footer__container .footer__section .footer__section--label .section__label--button {
+  width: 4em;
+  background-color: hsl(40deg, 46%, 60%);
+  border: none;
+}
+footer .footer__container .footer__section .footer__section--label .section__label--button .fa-solid {
+  color: white;
+}
+footer .footer__container--top {
+  display: flex;
+  width: 80%;
+  padding-left: 10%;
+  justify-content: space-between;
+}
+footer .footer__container--top .footer__section--three {
+  width: 33em;
+}
+footer .footer__container--top .footer__section--four .fa {
+  color: hsl(40deg, 46%, 60%);
+  margin-right: 0.6em;
+}
+footer .footer__container--top .footer__section--four .fa-phone {
+  transform: rotate(270deg);
+}
+footer .footer__container--bottom {
+  padding-bottom: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10%;
+  width: 80%;
+}
+footer hr {
+  margin-top: 3em;
+  border: 1px solid #d7d7d7;
+  opacity: 6%;
+  width: 80%;
+}
+footer .footer__bottom--hr {
+  text-align: center;
+  height: 1.6em;
+}
+footer .footer__bottom--hr img {
+  position: relative;
+  top: -2em;
+  height: 4.5em;
+}
+footer .copyright {
+  font-size: 0.9em;
+}
+footer em {
+  color: hsl(40deg, 46%, 60%);
+}
+footer .footer__bottom--right {
+  display: flex;
+  justify-content: flex-end;
+}
+footer .footer__bottom--right ul {
+  display: flex;
+}
+footer .footer__bottom--right .fa, footer .footer__bottom--right .fab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5em;
+  background-color: hsl(192deg, 7%, 14%);
+  border-radius: 50%;
+  height: 1.5em;
+  color: white;
+  margin-left: 1em;
+}
+footer .footer__bottom--right .fa:hover, footer .footer__bottom--right .fab:hover {
+  background-color: hsl(40deg, 46%, 60%);
+}
+
+@media (max-width: 800px) {
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer__section--logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+  .footer__section--logo img {
+    height: 4.5em;
+  }
+  .footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer__container .footer__section {
+    padding-bottom: 3em;
+    width: 10em;
+    font-size: 1em;
+  }
+  .footer__bottom--hr {
+    margin-bottom: 3em;
+  }
+  .footer__container--bottom {
+    justify-content: center;
+  }
+}
+@media (max-width: 1300px) {
+  .footer__bottom--hr {
+    margin-bottom: 3em;
+  }
+  .footer__container--bottom {
+    justify-content: center;
+  }
+}
+=======
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -76,6 +258,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 
 header {
   background-color: grey;
