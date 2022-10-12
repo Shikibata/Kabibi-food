@@ -1,0 +1,95 @@
+@import "../variables.scss";
+
+.section__why {
+    margin-bottom: 5rem;
+
+    .section__why--titre {
+        font-weight: 100;
+        font-size: 10.5rem;
+        line-height: 1.5;
+        width: 6em;
+        opacity: 0.1;
+        position: relative;
+        text-transform: uppercase;
+        margin-left: 1rem;
+        color: $color_gold;
+    }
+
+    .section__why--p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 6em;
+        gap: 1em;
+        margin-top: -10em;
+
+        .section__h2 {
+            text-transform: uppercase;
+            font-size: xx-large;
+        }
+
+        }
+
+        .section__why--container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-top: -10rem;
+            gap: 2.5rem;
+
+            .section__why--container--imgBox {
+                height: 22rem;
+                width: 17rem;
+
+                .section__why--container--img {
+                    height: 100%;
+                    width: 100%;
+                }
+
+            }
+
+            .section__why--container--textBox {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                height: 20rem;
+                gap: 1.5rem;
+                padding-top: 3.5rem;
+                max-width: 20rem;
+
+
+                .section__why--container--textBoxtext {
+                    line-height: 2rem;
+        
+                    
+                }
+
+                .section__why--container--textBoxbtn {
+                    text-decoration: none;
+                    color: white;
+                    background-color: $color_gold;
+                    width: fit-content;
+                    text-transform: uppercase;
+                    font-size: xx-small;
+                    font-weight: bolder;
+                    border-radius: 3px;
+                    padding-top: 13px;
+                    padding-bottom: 13px;
+                    padding-left: 25px;
+                    padding-right: 25px;
+
+                  
+                }
+            }
+        }
+
+
+}
+
+.section__why--topRightImg {
+    position: relative;
+    top: -10.9rem;
+    right: -70.9rem;
+}

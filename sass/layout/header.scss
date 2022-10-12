@@ -1,19 +1,4 @@
-<<<<<<< HEAD
-header {
-    background-color: grey;
-    height: 50vh;
-    width: 100vw;
-    
 
-
-    nav {
-        display: flex;
-        flex-flow: row nowrap;
-        border: solid black;
-        height: 50px;
-        padding-top: 25px;
-        gap: 100px 300px;
-=======
 
 
 header {
@@ -26,7 +11,7 @@ header {
     justify-content: flex-start;
     align-items: stretch;
     align-content: stretch;
-    background-image: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(178,240,233,0) 100%), url(/img/slider/img_bg_slider_home01.jpg);
+    background-image: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(178,240,233,0) 100%), url(assets/img/slider/img_bg_slider_home01.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -70,7 +55,7 @@ header {
             margin-left: -10rem;
         }
 
-        ul {
+        #list__header {
             list-style: none;
             display: flex;
             flex-grow: row nowrap;
@@ -106,14 +91,12 @@ header {
             }
         }
 
->>>>>>> dcc41de (First adding of the header, missing burger menu, responsive ok)
         
         
         
     }
 
-<<<<<<< HEAD
-    ul {
+    #list__header {
         list-style: none;
         display: flex;
         flex-grow: row nowrap;
@@ -130,8 +113,7 @@ header {
 
 
 
-}
-=======
+
     
     
     
@@ -215,7 +197,7 @@ header {
         margin-left: -35rem!important;
     }
 
-    ul {
+    #list__header {
         margin-left: -30rem!important;
     }
 
@@ -235,4 +217,3 @@ header {
     }
 }
 
->>>>>>> dcc41de (First adding of the header, missing burger menu, responsive ok)
