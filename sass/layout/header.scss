@@ -15,6 +15,8 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
 
+    
+
 
     .header__button--menu {
         text-decoration: none;
@@ -50,12 +52,26 @@ header {
         color: white;
         align-items: center;
 
+        #menu-toggle {
+            display: none;
+        
+        }
+
+        #menu-toggle:checked + #list__header {
+            display: block;
+          }
+
+
         .header__nav-icon  {
 
-            margin-left: -10rem;
+            position: absolute;
+            left: 2.9rem;
         }
 
         #list__header {
+            position: absolute;
+            left: 34.1rem;
+            top: 2rem;
             list-style: none;
             display: flex;
             flex-grow: row nowrap;
@@ -74,6 +90,12 @@ header {
             
             
         }
+
+        .fa-bars {
+            position: absolute;
+            left: 4rem;
+            display: none;
+        }
         
 
         .header__nav--contact {
@@ -83,6 +105,8 @@ header {
             margin-right: -10rem;
             margin-left: 3rem;
             align-items: center;
+            position: absolute;
+            right: 12rem;
 
             .fa-phone {
                 transform: rotateY(180deg);
@@ -151,6 +175,9 @@ header {
             .header__card-text--logo {
                 margin-right: 8rem;
                 padding-bottom: 1.5rem;
+                position: absolute;
+                left: 31rem;
+                bottom: 32.1rem;
             }
         }
 
@@ -204,11 +231,54 @@ header {
     .play {
         display: none!important;
     }
+
+    #list__header {
+        position: relative;
+        top: 16rem;
+        left: -10rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: black;
+        width: 7rem;
+        position: absolute;
+        left: 31.5rem!important;
+        top: 10rem!important;
+        border-radius: 8px;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .fa-bars {
+        display: block!important;
+        color: $color_gold ;
+        position: absolute;
+
+
+    }
+
+    
+
+    .header__nav-icon  {
+        position: absolute;
+        left: 7.9rem!important;
+    }
+
+
+
 }
+
+
+
 @media (max-width: 600px) {
     .header__card-text {
         font-size: 3.9em!important;
     }
+    .header__nav-icon {
+        display: none;
+    }
+    
+
 }
 
 @media (max-width: 480px) {

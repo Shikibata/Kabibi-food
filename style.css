@@ -278,10 +278,20 @@ nav {
   color: white;
   align-items: center;
 }
+nav #menu-toggle {
+  display: none;
+}
+nav #menu-toggle:checked + #list__header {
+  display: block;
+}
 nav .header__nav-icon {
-  margin-left: -10rem;
+  position: absolute;
+  left: 2.9rem;
 }
 nav #list__header {
+  position: absolute;
+  left: 34.1rem;
+  top: 2rem;
   list-style: none;
   display: flex;
   flex-grow: row nowrap;
@@ -296,6 +306,11 @@ nav #list__header li:hover {
   color: hsl(40deg, 46%, 60%);
   cursor: pointer;
 }
+nav .fa-bars {
+  position: absolute;
+  left: 4rem;
+  display: none;
+}
 nav .header__nav--contact {
   display: flex;
   flex-direction: row;
@@ -303,6 +318,8 @@ nav .header__nav--contact {
   margin-right: -10rem;
   margin-left: 3rem;
   align-items: center;
+  position: absolute;
+  right: 12rem;
 }
 nav .header__nav--contact .fa-phone {
   transform: rotateY(180deg);
@@ -353,6 +370,9 @@ nav .header__nav--contact .fa-phone {
 .header__container .header__card-text .header__card-text--logo {
   margin-right: 8rem;
   padding-bottom: 1.5rem;
+  position: absolute;
+  left: 31rem;
+  bottom: 32.1rem;
 }
 .header__container .play {
   display: flex;
@@ -391,10 +411,38 @@ nav .header__nav--contact .fa-phone {
   .play {
     display: none !important;
   }
+  #list__header {
+    position: relative;
+    top: 16rem;
+    left: -10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: black;
+    width: 7rem;
+    position: absolute;
+    left: 31.5rem !important;
+    top: 10rem !important;
+    border-radius: 8px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .fa-bars {
+    display: block !important;
+    color: hsl(40deg, 46%, 60%);
+    position: absolute;
+  }
+  .header__nav-icon {
+    position: absolute;
+    left: 7.9rem !important;
+  }
 }
 @media (max-width: 600px) {
   .header__card-text {
     font-size: 3.9em !important;
+  }
+  .header__nav-icon {
+    display: none;
   }
 }
 @media (max-width: 480px) {
@@ -402,6 +450,98 @@ nav .header__nav--contact .fa-phone {
     font-size: 3.5em !important;
   }
 }
+.section__blog .list-brand {
+  padding-left: 10%;
+  width: 80%;
+  padding-bottom: 4em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section__blog .list-brand img {
+  width: 5em;
+}
+
+.section__div--span {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+}
+.section__div--span .fa {
+  color: hsl(40deg, 46%, 60%);
+  padding: 0 0.3em;
+}
+
+.section--titre, .section__chefs--titre, .section__blog--titre {
+  font-weight: 100;
+  font-size: 10.5rem;
+  line-height: 1.5;
+  width: 6em;
+  opacity: 0.1;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.section__blog--titre {
+  color: hsl(40deg, 46%, 60%);
+}
+
+.container__article {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: auto;
+  justify-content: center;
+  width: 80%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5em;
+  gap: 1.2em;
+}
+.container__article article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 23em;
+  height: 30em;
+  background-color: hsl(36deg, 50%, 96%);
+}
+.container__article article img {
+  width: 23em;
+}
+.container__article article p, .container__article article button {
+  margin: 0em 2.2em;
+}
+.container__article article button {
+  background-color: white;
+  color: black;
+  border: solid transparent;
+  border-radius: 5px;
+  padding: 0.7em;
+  margin-bottom: 20px;
+  text-decoration: none;
+  width: 45%;
+}
+
+.blog__titre-p, .chefs__titre-p, .gallery__titre-p, .section__offer .section__offer--p, .section__why .section__why--p, .section__category .section__category--bg .section__category--p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 6em;
+  gap: 1em;
+  margin-top: -10em;
+}
+.blog__titre-p h3, .chefs__titre-p h3, .gallery__titre-p h3, .section__offer .section__offer--p h3, .section__why .section__why--p h3, .section__category .section__category--bg .section__category--p h3 {
+  font-family: "Cinzel";
+  font-size: 2.6em;
+}
+.blog__titre-p p, .chefs__titre-p p, .gallery__titre-p p, .section__offer .section__offer--p p, .section__why .section__why--p p, .section__category .section__category--bg .section__category--p p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  font-size: 0.9m;
+}
+
 .section__category {
   display: flex;
   flex-direction: column;
@@ -424,22 +564,20 @@ nav .header__nav--contact .fa-phone {
   width: 6em;
   opacity: 0.1;
   position: relative;
+  left: -3rem;
   text-transform: uppercase;
-  margin-left: -2.2rem;
   color: hsl(40deg, 46%, 60%);
 }
 .section__category .section__category--bg .section__category--p {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 6em;
-  gap: 1em;
-  margin-top: -10em;
+  color: black;
+}
+.section__category .section__category--bg .section__category--p .section__p {
+  color: black;
 }
 .section__category .section__category--bg .section__category--p .section__h2 {
   text-transform: uppercase;
   font-size: xx-large;
+  color: black;
 }
 .section__category .section__category--containerArticle {
   display: grid;
@@ -502,6 +640,98 @@ nav .header__nav--contact .fa-phone {
   width: 30rem;
 }
 
+.section__blog .list-brand {
+  padding-left: 10%;
+  width: 80%;
+  padding-bottom: 4em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section__blog .list-brand img {
+  width: 5em;
+}
+
+.section__div--span {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+}
+.section__div--span .fa {
+  color: hsl(40deg, 46%, 60%);
+  padding: 0 0.3em;
+}
+
+.section--titre, .section__chefs--titre, .section__blog--titre {
+  font-weight: 100;
+  font-size: 10.5rem;
+  line-height: 1.5;
+  width: 6em;
+  opacity: 0.1;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.section__blog--titre {
+  color: hsl(40deg, 46%, 60%);
+}
+
+.container__article {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: auto;
+  justify-content: center;
+  width: 80%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5em;
+  gap: 1.2em;
+}
+.container__article article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 23em;
+  height: 30em;
+  background-color: hsl(36deg, 50%, 96%);
+}
+.container__article article img {
+  width: 23em;
+}
+.container__article article p, .container__article article button {
+  margin: 0em 2.2em;
+}
+.container__article article button {
+  background-color: white;
+  color: black;
+  border: solid transparent;
+  border-radius: 5px;
+  padding: 0.7em;
+  margin-bottom: 20px;
+  text-decoration: none;
+  width: 45%;
+}
+
+.blog__titre-p, .chefs__titre-p, .gallery__titre-p, .section__offer .section__offer--p, .section__why .section__why--p, .section__category .section__category--bg .section__category--p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 6em;
+  gap: 1em;
+  margin-top: -10em;
+}
+.blog__titre-p h3, .chefs__titre-p h3, .gallery__titre-p h3, .section__offer .section__offer--p h3, .section__why .section__why--p h3, .section__category .section__category--bg .section__category--p h3 {
+  font-family: "Cinzel";
+  font-size: 2.6em;
+}
+.blog__titre-p p, .chefs__titre-p p, .gallery__titre-p p, .section__offer .section__offer--p p, .section__why .section__why--p p, .section__category .section__category--bg .section__category--p p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  font-size: 0.9m;
+}
+
 .section__why {
   margin-bottom: 5rem;
 }
@@ -517,17 +747,15 @@ nav .header__nav--contact .fa-phone {
   color: hsl(40deg, 46%, 60%);
 }
 .section__why .section__why--p {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 6em;
-  gap: 1em;
-  margin-top: -10em;
+  color: black;
+}
+.section__why .section__why--p .section__p {
+  color: black;
 }
 .section__why .section__why--p .section__h2 {
   text-transform: uppercase;
   font-size: xx-large;
+  color: black;
 }
 .section__why .section__why--container {
   display: flex;
@@ -578,6 +806,98 @@ nav .header__nav--contact .fa-phone {
   right: -70.9rem;
 }
 
+.section__blog .list-brand {
+  padding-left: 10%;
+  width: 80%;
+  padding-bottom: 4em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section__blog .list-brand img {
+  width: 5em;
+}
+
+.section__div--span {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+}
+.section__div--span .fa {
+  color: hsl(40deg, 46%, 60%);
+  padding: 0 0.3em;
+}
+
+.section--titre, .section__chefs--titre, .section__blog--titre {
+  font-weight: 100;
+  font-size: 10.5rem;
+  line-height: 1.5;
+  width: 6em;
+  opacity: 0.1;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.section__blog--titre {
+  color: hsl(40deg, 46%, 60%);
+}
+
+.container__article {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: auto;
+  justify-content: center;
+  width: 80%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5em;
+  gap: 1.2em;
+}
+.container__article article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 23em;
+  height: 30em;
+  background-color: hsl(36deg, 50%, 96%);
+}
+.container__article article img {
+  width: 23em;
+}
+.container__article article p, .container__article article button {
+  margin: 0em 2.2em;
+}
+.container__article article button {
+  background-color: white;
+  color: black;
+  border: solid transparent;
+  border-radius: 5px;
+  padding: 0.7em;
+  margin-bottom: 20px;
+  text-decoration: none;
+  width: 45%;
+}
+
+.blog__titre-p, .chefs__titre-p, .gallery__titre-p, .section__offer .section__offer--p, .section__category .section__category--bg .section__category--p, .section__why .section__why--p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 6em;
+  gap: 1em;
+  margin-top: -10em;
+}
+.blog__titre-p h3, .chefs__titre-p h3, .gallery__titre-p h3, .section__offer .section__offer--p h3, .section__category .section__category--bg .section__category--p h3, .section__why .section__why--p h3 {
+  font-family: "Cinzel";
+  font-size: 2.6em;
+}
+.blog__titre-p p, .chefs__titre-p p, .gallery__titre-p p, .section__offer .section__offer--p p, .section__category .section__category--bg .section__category--p p, .section__why .section__why--p p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  font-size: 0.9m;
+}
+
 .section__offer {
   background-color: hsl(36deg, 50%, 96%);
   height: 49rem;
@@ -609,24 +929,23 @@ nav .header__nav--contact .fa-phone {
   color: hsl(40deg, 46%, 60%);
 }
 .section__offer .section__offer--p {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 6em;
-  gap: 1em;
-  margin-top: -10em;
+  color: black;
+}
+.section__offer .section__offer--p .section__p {
+  color: black;
 }
 .section__offer .section__offer--p .section__h2 {
   text-transform: uppercase;
   font-size: xx-large;
+  color: black;
 }
-.section__offer .section__offer--containerGrid {
+
+.section__offer--containerGrid {
   position: relative;
   bottom: 49rem;
   left: 15rem;
 }
-.section__offer .section__offer--containerGrid .section__offer--container {
+.section__offer--containerGrid .section__offer--container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -634,7 +953,7 @@ nav .header__nav--contact .fa-phone {
   gap: 1rem;
   width: 68.5%;
 }
-.section__offer .section__offer--containerGrid .section__offer--container .section__offer--containerContent {
+.section__offer--containerGrid .section__offer--container .section__offer--containerContent {
   background-color: white;
   border-radius: 5px;
   width: 25rem;
@@ -646,16 +965,16 @@ nav .header__nav--contact .fa-phone {
   padding-left: 2rem;
   padding-right: 2rem;
 }
-.section__offer .section__offer--containerGrid .section__offer--container .section__offer--containerContent.selected {
+.section__offer--containerGrid .section__offer--container .section__offer--containerContent.selected {
   border: dashed hsl(40deg, 46%, 60%);
 }
-.section__offer .section__offer--containerGrid .section__offer--container .section__offer--containerContent .section__offer--containerContentText .section__offer--containerContentTextBig {
+.section__offer--containerGrid .section__offer--container .section__offer--containerContent .section__offer--containerContentText .section__offer--containerContentTextBig {
   font-size: large;
 }
-.section__offer .section__offer--containerGrid .section__offer--container .section__offer--containerContent .section__offer--containerContentText .section__offer--containerContentTextSmall {
+.section__offer--containerGrid .section__offer--container .section__offer--containerContent .section__offer--containerContentText .section__offer--containerContentTextSmall {
   font-size: small;
 }
-.section__offer .section__offer--containerGrid .section__offer--container .section__offer--containerContent .section__offer--containerContentPrice {
+.section__offer--containerGrid .section__offer--container .section__offer--containerContent .section__offer--containerContentPrice {
   font-size: xx-large;
   color: hsl(40deg, 46%, 60%);
   font-weight: 50;
@@ -734,7 +1053,7 @@ nav .header__nav--contact .fa-phone {
   width: 45%;
 }
 
-.blog__titre-p, .chefs__titre-p, .gallery__titre-p {
+.blog__titre-p, .chefs__titre-p, .gallery__titre-p, .section__category .section__category--bg .section__category--p, .section__why .section__why--p, .section__offer .section__offer--p {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -743,11 +1062,11 @@ nav .header__nav--contact .fa-phone {
   gap: 1em;
   margin-top: -10em;
 }
-.blog__titre-p h3, .chefs__titre-p h3, .gallery__titre-p h3 {
+.blog__titre-p h3, .chefs__titre-p h3, .gallery__titre-p h3, .section__category .section__category--bg .section__category--p h3, .section__why .section__why--p h3, .section__offer .section__offer--p h3 {
   font-family: "Cinzel";
   font-size: 2.6em;
 }
-.blog__titre-p p, .chefs__titre-p p, .gallery__titre-p p {
+.blog__titre-p p, .chefs__titre-p p, .gallery__titre-p p, .section__category .section__category--bg .section__category--p p, .section__why .section__why--p p, .section__offer .section__offer--p p {
   font-family: "Open Sans", sans-serif;
   font-weight: 100;
   font-size: 0.9m;
@@ -826,7 +1145,7 @@ nav .header__nav--contact .fa-phone {
   width: 45%;
 }
 
-.blog__titre-p, .chefs__titre-p, .gallery__titre-p {
+.blog__titre-p, .chefs__titre-p, .gallery__titre-p, .section__category .section__category--bg .section__category--p, .section__why .section__why--p, .section__offer .section__offer--p {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -835,11 +1154,11 @@ nav .header__nav--contact .fa-phone {
   gap: 1em;
   margin-top: -10em;
 }
-.blog__titre-p h3, .chefs__titre-p h3, .gallery__titre-p h3 {
+.blog__titre-p h3, .chefs__titre-p h3, .gallery__titre-p h3, .section__category .section__category--bg .section__category--p h3, .section__why .section__why--p h3, .section__offer .section__offer--p h3 {
   font-family: "Cinzel";
   font-size: 2.6em;
 }
-.blog__titre-p p, .chefs__titre-p p, .gallery__titre-p p {
+.blog__titre-p p, .chefs__titre-p p, .gallery__titre-p p, .section__category .section__category--bg .section__category--p p, .section__why .section__why--p p, .section__offer .section__offer--p p {
   font-family: "Open Sans", sans-serif;
   font-weight: 100;
   font-size: 0.9m;
@@ -879,11 +1198,6 @@ nav .header__nav--contact .fa-phone {
 .gallery span {
   font-family: "Open Sans", sans-serif;
   font-weight: 200;
-}
-
-.gallery:hover {
-  opacity: 1;
-  filter: brightness(50%);
 }
 
 .gallery:hover span {
@@ -932,6 +1246,30 @@ nav .header__nav--contact .fa-phone {
   grid-area: 2/3/3/5;
   background-image: url(/assets/img/gallery/img6gallerybox.jpg);
   background-size: cover;
+}
+
+.gallery_one:hover {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 99%), url("/assets/img/gallery/img1gallerybox.jpg");
+}
+
+.gallery_two:hover {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 99%), url("/assets/img/gallery/img2gallerybox.jpg");
+}
+
+.gallery_three:hover {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 99%), url("/assets/img/gallery/img3gallerybox.jpg");
+}
+
+.gallery_four:hover {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 99%), url("/assets/img/gallery/img4gallerybox.jpg");
+}
+
+.gallery_five:hover {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 99%), url("/assets/img/gallery/img5gallerybox.jpg");
+}
+
+.gallery_six:hover {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 99%), url("/assets/img/gallery/img6gallerybox.jpg");
 }
 
 #gallery__link {
@@ -1030,7 +1368,7 @@ nav .header__nav--contact .fa-phone {
   width: 45%;
 }
 
-.blog__titre-p, .chefs__titre-p, .gallery__titre-p {
+.blog__titre-p, .chefs__titre-p, .section__category .section__category--bg .section__category--p, .section__why .section__why--p, .section__offer .section__offer--p, .gallery__titre-p {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1039,11 +1377,11 @@ nav .header__nav--contact .fa-phone {
   gap: 1em;
   margin-top: -10em;
 }
-.blog__titre-p h3, .chefs__titre-p h3, .gallery__titre-p h3 {
+.blog__titre-p h3, .chefs__titre-p h3, .section__category .section__category--bg .section__category--p h3, .section__why .section__why--p h3, .section__offer .section__offer--p h3, .gallery__titre-p h3 {
   font-family: "Cinzel";
   font-size: 2.6em;
 }
-.blog__titre-p p, .chefs__titre-p p, .gallery__titre-p p {
+.blog__titre-p p, .chefs__titre-p p, .section__category .section__category--bg .section__category--p p, .section__why .section__why--p p, .section__offer .section__offer--p p, .gallery__titre-p p {
   font-family: "Open Sans", sans-serif;
   font-weight: 100;
   font-size: 0.9m;

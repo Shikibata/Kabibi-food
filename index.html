@@ -10,15 +10,19 @@
     <script src="https://kit.fontawesome.com/385f1a4b54.js" crossorigin="anonymous"></script>
 <body>
 <header>
-        <nav>
+        <nav class="header__navbar">
             <div class="header__nav-icon"><img src="./img/logo/logo.png" alt=""></div>
-            <ul id="list__header">
-                <li>Home</li>
-                <li>About</li>
-                <li>Page</li>
-                <li>Shop</li>
-                <li>Contact</li>
-            </ul>
+            <div class="header__navbar--links">
+                <ul id="list__header">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Page</li>
+                    <li>Shop</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+            <input type="checkbox" id="menu-toggle" />
             <div class="header__nav--contact">
                 <div class="header__nav--phone"><i class="fa fa-phone" aria-hidden="true"></i>+012(345)67 899</div>
                 <a href="#" class="header__button--book">Book a table <i class="fa fa-arrow-right"></i></a>
@@ -44,7 +48,7 @@
 <main>
     <section class="section__category">
         <div class="section__category--bg">
-            <h2 class="section__category--titre">Category</h2>
+            <h2 class="section__category--titre section--titre">Category</h2>
             <div class="section__category--p">
                 <h3 class="section__h2">Choose your best category</h3>
                 <p class="section__p">Best foods for you & family</p>
@@ -56,7 +60,7 @@
                     <div><i class="fa fa-arrow-right"></i></div>
                 </article>
                 <article class="section__category--article">
-                    <div class="section__category--containerArticleIcon"><i class="fa-solid fa-pizza fa-3x"></i></div>
+                    <div class="section__category--containerArticleIcon"><i class="fa-solid fa-pizza-slice fa-3x"></i></div>
                     <div>Pizza Slice</div>
                     <div><i class="fa fa-arrow-right"></i></div>
                 </article>
@@ -66,12 +70,12 @@
                     <div><i class="fa fa-arrow-right"></i></div>
                 </article>
                 <article class="section__category--article">
-                    <div class="section__category--containerArticleIcon"><i class="fa-solid fa-chicken fa-3x"></i></div>
+                    <div class="section__category--containerArticleIcon"><i class="fa fa-cutlery fa-3x" aria-hidden="true"></i></div>
                     <div>Chicken-Leg</div>
                     <div><i class="fa fa-arrow-right"></i></div>
                 </article>
                 <article class="section__category--article">
-                    <div class="section__category--containerArticleIcon"><i class="fa-solid fa-drink fa-3x"></i></div>
+                    <div class="section__category--containerArticleIcon"><i class="fa fa-glass fa-3x" aria-hidden="true"></i></div>
                     <div>Energy-Drink</div>
                     <div><i class="fa fa-arrow-right"></i></div>
                 </article>
@@ -91,7 +95,7 @@
         </div>
     </section>
     <section class="section__why">
-        <h2 class="section__why--titre">About Us</h2>
+        <h2 class="section__why--titre section--titre">About Us</h2>
             <div class="section__why--p">
                 <h3 class="section__h2">Why choose us</h3>
                 <p class="section__p">Best foods for you & family</p>
@@ -112,7 +116,7 @@
         </div>
     </section>
     <section class="section__offer">
-        <h2 class="section__offer--titre">Our menu</h2>
+        <h2 class="section__offer--titre section--titre">Our menu</h2>
             <div class="section__offer--p">
                 <h3 class="section__h2">Try our special offer</h3>
                 <p class="section__p">Best foods for you & family</p>

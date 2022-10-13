@@ -1,5 +1,7 @@
 @import "../variables.scss";
 
+@import "../layout/blog.scss";
+
 .section__category {
     
     display: flex;
@@ -24,31 +26,30 @@
             width: 6em;
             opacity: 0.1;
             position: relative;
+            left: -3rem;
             text-transform: uppercase;
-            margin-left: -2.2rem;
             color: $color_gold;
+            
         }
 
         .section__category--p {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding-bottom: 6em;
-            gap: 1em;
-            margin-top: -10em;
+           @extend .blog__titre-p;
+            color: black;
+
+            .section__p {
+                color: black;
+            }
 
             .section__h2 {
                 text-transform: uppercase;
                 font-size: xx-large;
+                color: black;
             }
         }
 
     }
 
-    // .section__category--bg::after {
-    //     background-color: red;
-    // }
+    
 
     .section__category--containerArticle {
         display: grid;

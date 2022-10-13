@@ -1,6 +1,8 @@
 @import "../variables.scss";
 
 
+@import "../layout/blog.scss";
+
 .section__offer {
     background-color: $color_bgArticle;
     height: 49rem;
@@ -39,20 +41,21 @@
     }
 
     .section__offer--p {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 6em;
-        gap: 1em;
-        margin-top: -10em;
+        @extend .blog__titre-p;
+         color: black;
 
-        .section__h2 {
-            text-transform: uppercase;
-            font-size: xx-large;
-        }
+         .section__p {
+             color: black;
+         }
 
-        }
+         .section__h2 {
+             text-transform: uppercase;
+             font-size: xx-large;
+             color: black;
+         }
+     }
+
+    }
 
         .section__offer--containerGrid {
 
@@ -112,4 +115,3 @@
 
             }
         }
-}
