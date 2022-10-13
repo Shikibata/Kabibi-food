@@ -110,3 +110,25 @@
 	}
 
 }
+
+@media screen and (max-width: 770px) {
+	.container__article {
+			display: grid;
+			grid-template-columns: repeat(1, auto);
+		}
+	
+		.section__blog--titre {
+			font-size: 9em;
+		}
+	.list-brand {
+		flex-wrap: wrap;
+	}
+	
+	}
+	
+	@media screen and (min-width: 771px) and (max-width: 1040px) {
+		.container__article {
+				display: grid;
+				grid-template-columns: repeat(2, auto);
+			}
+		}
