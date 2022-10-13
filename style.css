@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
 @font-face {
   font-family: Revans;
   src: url(/font/Revans-Medium.ttf);
@@ -258,7 +259,7 @@ header .header__button--menu {
   padding-bottom: 0.7rem;
 }
 header .header__button--book {
-  background-color: goldenrod;
+  background-color: hsl(40deg, 46%, 60%);
   border: solid transparent;
   border-radius: 5px;
   padding-left: 15px;
@@ -289,10 +290,10 @@ nav #list__header {
   margin-left: -15rem;
 }
 nav #list__header li:nth-child(1) {
-  color: goldenrod;
+  color: hsl(40deg, 46%, 60%);
 }
 nav #list__header li:hover {
-  color: goldenrod;
+  color: hsl(40deg, 46%, 60%);
   cursor: pointer;
 }
 nav .header__nav--contact {
@@ -305,7 +306,7 @@ nav .header__nav--contact {
 }
 nav .header__nav--contact .fa-phone {
   transform: rotateY(180deg);
-  color: goldenrod;
+  color: hsl(40deg, 46%, 60%);
   margin-right: 5px;
 }
 
@@ -377,7 +378,7 @@ nav .header__nav--contact .fa-phone {
 }
 .header__container .fa-play {
   transform: scale(1.5);
-  color: goldenrod;
+  color: hsl(40deg, 46%, 60%);
 }
 
 @media (max-width: 1200px) {
@@ -575,6 +576,509 @@ nav .header__nav--contact .fa-phone {
   position: relative;
   top: -10.9rem;
   right: -70.9rem;
+}
+
+.section__offer {
+  background-color: hsl(36deg, 50%, 96%);
+  height: 49rem;
+}
+.section__offer .section__offer--Img1 {
+  height: 100%;
+  width: 40%;
+  position: relative;
+  left: 57rem;
+  z-index: -0.1;
+  top: -15.6rem;
+}
+.section__offer .section__offer--Img2 {
+  position: relative;
+  left: -37rem;
+  top: -3rem;
+  height: 80%;
+  width: 18%;
+}
+.section__offer .section__offer--titre {
+  font-weight: 100;
+  font-size: 10.5rem;
+  line-height: 1.5;
+  width: 6em;
+  opacity: 0.1;
+  position: relative;
+  text-transform: uppercase;
+  margin-left: 1rem;
+  color: hsl(40deg, 46%, 60%);
+}
+.section__offer .section__offer--p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 6em;
+  gap: 1em;
+  margin-top: -10em;
+}
+.section__offer .section__offer--p .section__h2 {
+  text-transform: uppercase;
+  font-size: xx-large;
+}
+.section__offer .section__offer--containerGrid {
+  position: relative;
+  bottom: 49rem;
+  left: 15rem;
+}
+.section__offer .section__offer--containerGrid .section__offer--container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 1rem;
+  width: 68.5%;
+}
+.section__offer .section__offer--containerGrid .section__offer--container .section__offer--containerContent {
+  background-color: white;
+  border-radius: 5px;
+  width: 25rem;
+  height: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.section__offer .section__offer--containerGrid .section__offer--container .section__offer--containerContent.selected {
+  border: dashed hsl(40deg, 46%, 60%);
+}
+.section__offer .section__offer--containerGrid .section__offer--container .section__offer--containerContent .section__offer--containerContentText .section__offer--containerContentTextBig {
+  font-size: large;
+}
+.section__offer .section__offer--containerGrid .section__offer--container .section__offer--containerContent .section__offer--containerContentText .section__offer--containerContentTextSmall {
+  font-size: small;
+}
+.section__offer .section__offer--containerGrid .section__offer--container .section__offer--containerContent .section__offer--containerContentPrice {
+  font-size: xx-large;
+  color: hsl(40deg, 46%, 60%);
+  font-weight: 50;
+}
+
+.section__blog .list-brand {
+  padding-left: 10%;
+  width: 80%;
+  padding-bottom: 4em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section__blog .list-brand img {
+  width: 5em;
+}
+
+.section__div--span {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+}
+.section__div--span .fa {
+  color: hsl(40deg, 46%, 60%);
+  padding: 0 0.3em;
+}
+
+.section--titre, .section__chefs--titre, .section__blog--titre {
+  font-weight: 100;
+  font-size: 10.5rem;
+  line-height: 1.5;
+  width: 6em;
+  opacity: 0.1;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.section__blog--titre {
+  color: hsl(40deg, 46%, 60%);
+}
+
+.container__article {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: auto;
+  justify-content: center;
+  width: 80%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5em;
+  gap: 1.2em;
+}
+.container__article article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 23em;
+  height: 30em;
+  background-color: hsl(36deg, 50%, 96%);
+}
+.container__article article img {
+  width: 23em;
+}
+.container__article article p, .container__article article button {
+  margin: 0em 2.2em;
+}
+.container__article article button {
+  background-color: white;
+  color: black;
+  border: solid transparent;
+  border-radius: 5px;
+  padding: 0.7em;
+  margin-bottom: 20px;
+  text-decoration: none;
+  width: 45%;
+}
+
+.blog__titre-p, .chefs__titre-p, .gallery__titre-p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 6em;
+  gap: 1em;
+  margin-top: -10em;
+}
+.blog__titre-p h3, .chefs__titre-p h3, .gallery__titre-p h3 {
+  font-family: "Cinzel";
+  font-size: 2.6em;
+}
+.blog__titre-p p, .chefs__titre-p p, .gallery__titre-p p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  font-size: 0.9m;
+}
+
+.section__blog .list-brand {
+  padding-left: 10%;
+  width: 80%;
+  padding-bottom: 4em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section__blog .list-brand img {
+  width: 5em;
+}
+
+.section__div--span {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+}
+.section__div--span .fa {
+  color: hsl(40deg, 46%, 60%);
+  padding: 0 0.3em;
+}
+
+.section--titre, .section__chefs--titre, .section__blog--titre {
+  font-weight: 100;
+  font-size: 10.5rem;
+  line-height: 1.5;
+  width: 6em;
+  opacity: 0.1;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.section__blog--titre {
+  color: hsl(40deg, 46%, 60%);
+}
+
+.container__article {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: auto;
+  justify-content: center;
+  width: 80%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5em;
+  gap: 1.2em;
+}
+.container__article article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 23em;
+  height: 30em;
+  background-color: hsl(36deg, 50%, 96%);
+}
+.container__article article img {
+  width: 23em;
+}
+.container__article article p, .container__article article button {
+  margin: 0em 2.2em;
+}
+.container__article article button {
+  background-color: white;
+  color: black;
+  border: solid transparent;
+  border-radius: 5px;
+  padding: 0.7em;
+  margin-bottom: 20px;
+  text-decoration: none;
+  width: 45%;
+}
+
+.blog__titre-p, .chefs__titre-p, .gallery__titre-p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 6em;
+  gap: 1em;
+  margin-top: -10em;
+}
+.blog__titre-p h3, .chefs__titre-p h3, .gallery__titre-p h3 {
+  font-family: "Cinzel";
+  font-size: 2.6em;
+}
+.blog__titre-p p, .chefs__titre-p p, .gallery__titre-p p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  font-size: 0.9m;
+}
+
+.container__gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  width: 80%;
+  padding-left: 10%;
+  margin-bottom: 5em;
+}
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 23em;
+  justify-content: center;
+}
+.gallery i, .gallery p, .gallery span {
+  color: transparent;
+}
+.gallery i {
+  position: relative;
+  left: 45%;
+  top: -22%;
+}
+.gallery p {
+  margin-top: 5em;
+  font-family: "Cinzel";
+  font-size: 1.2em;
+  padding-bottom: 0.4em;
+}
+.gallery span {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 200;
+}
+
+.gallery:hover {
+  opacity: 1;
+  filter: brightness(50%);
+}
+
+.gallery:hover span {
+  color: white;
+}
+
+.gallery:hover p {
+  color: white;
+}
+
+.gallery:hover i {
+  color: white;
+}
+
+.gallery_one {
+  grid-area: 1/1/2/3;
+  background: url(/assets/img/gallery/img1gallerybox.jpg);
+  background-size: cover;
+}
+
+.gallery_two {
+  grid-area: 1/3/2/4;
+  background-image: url(/assets/img/gallery/img2gallerybox.jpg);
+  background-size: cover;
+}
+
+.gallery_three {
+  grid-area: 1/4/2/5;
+  background-image: url(/assets/img/gallery/img3gallerybox.jpg);
+  background-size: cover;
+}
+
+.gallery_four {
+  grid-area: 2/1/3/2;
+  background-image: url(/assets/img/gallery/img4gallerybox.jpg);
+  background-size: cover;
+}
+
+.gallery_five {
+  grid-area: 2/2/3/3;
+  background-image: url(/assets/img/gallery/img5gallerybox.jpg);
+  background-size: cover;
+}
+
+.gallery_six {
+  grid-area: 2/3/3/5;
+  background-image: url(/assets/img/gallery/img6gallerybox.jpg);
+  background-size: cover;
+}
+
+#gallery__link {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+  gap: 12px;
+  display: flex;
+  width: 11%;
+  position: relative;
+  left: 44%;
+  margin-bottom: 4em;
+  margin-top: -1em;
+}
+
+.section__gallery--titre {
+  color: hsl(40deg, 46%, 60%);
+}
+
+.section__blog .list-brand {
+  padding-left: 10%;
+  width: 80%;
+  padding-bottom: 4em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section__blog .list-brand img {
+  width: 5em;
+}
+
+.section__div--span {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+}
+.section__div--span .fa {
+  color: hsl(40deg, 46%, 60%);
+  padding: 0 0.3em;
+}
+
+.section--titre, .section__chefs--titre, .section__blog--titre {
+  font-weight: 100;
+  font-size: 10.5rem;
+  line-height: 1.5;
+  width: 6em;
+  opacity: 0.1;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.section__blog--titre {
+  color: hsl(40deg, 46%, 60%);
+}
+
+.container__article {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: auto;
+  justify-content: center;
+  width: 80%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5em;
+  gap: 1.2em;
+}
+.container__article article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 23em;
+  height: 30em;
+  background-color: hsl(36deg, 50%, 96%);
+}
+.container__article article img {
+  width: 23em;
+}
+.container__article article p, .container__article article button {
+  margin: 0em 2.2em;
+}
+.container__article article button {
+  background-color: white;
+  color: black;
+  border: solid transparent;
+  border-radius: 5px;
+  padding: 0.7em;
+  margin-bottom: 20px;
+  text-decoration: none;
+  width: 45%;
+}
+
+.blog__titre-p, .chefs__titre-p, .gallery__titre-p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 6em;
+  gap: 1em;
+  margin-top: -10em;
+}
+.blog__titre-p h3, .chefs__titre-p h3, .gallery__titre-p h3 {
+  font-family: "Cinzel";
+  font-size: 2.6em;
+}
+.blog__titre-p p, .chefs__titre-p p, .gallery__titre-p p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  font-size: 0.9m;
+}
+
+.section__chefs {
+  height: 50em;
+  background: rgb(0, 0, 0);
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.7693277995) 0%, rgb(0, 0, 0) 100%);
+}
+
+.section__chefs--titre {
+  color: rgb(72, 72, 72);
+}
+
+.section__h2 {
+  color: white;
+}
+
+.section__p {
+  color: white;
+}
+
+.container__chefs {
+  display: grid;
+  grid-template-columns: repeat(4, min-content);
+  grid-gap: 2.5rem;
+  place-content: center;
+}
+.container__chefs img {
+  width: 16rem;
+}
+
+.chefs__titre-p {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

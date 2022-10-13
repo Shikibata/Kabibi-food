@@ -1,4 +1,4 @@
-
+@import "../variables.scss";
 
 
 header {
@@ -29,7 +29,7 @@ header {
     }
 
     .header__button--book {
-        background-color: goldenrod;
+        background-color: $color_gold;
         border: solid transparent;
         border-radius: 5px;
         padding-left: 15px;
@@ -62,11 +62,11 @@ header {
             gap: 2rem;
             align-items: center;
             margin-left: -15rem;
-            li:nth-child(1) { color: goldenrod; }
+            li:nth-child(1) { color: $color_gold; }
 
             li:hover {
 
-                color: goldenrod;
+                color: $color_gold;
                 cursor: pointer;
             }
 
@@ -86,7 +86,7 @@ header {
 
             .fa-phone {
                 transform: rotateY(180deg);
-                color: goldenrod;
+                color: $color_gold;
                 margin-right: 5px;
             }
         }
@@ -184,7 +184,7 @@ header {
                 .fa-play {
                     transform: scale(1.5);
                     
-                    color: goldenrod;
+                    color: $color_gold;
                 }
                 
                 

@@ -1,0 +1,124 @@
+// @use "../variables" as *;
+@import './blog.scss';
+
+@import "../variables.scss";
+
+.container__gallery {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+	width: 80%;
+	padding-left: 10%;
+	margin-bottom: 5em;
+
+	img {
+	}
+}
+
+.gallery {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 23em;
+	justify-content: center;
+
+	i, p, span {
+		color: transparent;
+	}
+
+	i {
+		position: relative;
+		left: 45%;
+		top: -22%;
+	}
+	p {
+		margin-top: 5em;
+		font-family: 'Cinzel';
+		font-size: 1.2em;
+		padding-bottom: 0.4em;
+	}
+
+	span {
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 200;
+	}
+
+	
+	
+}
+
+.gallery:hover {
+	opacity: 1;
+	filter: brightness(50%);
+}
+
+.gallery:hover span{
+	color: white;
+}
+.gallery:hover  p{
+	color: white;
+}
+.gallery:hover i {
+	color: white;
+}
+
+.gallery_one { 
+	grid-area: 1 / 1 / 2 / 3; 
+	background: url(/assets/img/gallery/img1gallerybox.jpg);
+	background-size: cover;
+	}
+.gallery_two { 
+	grid-area: 1 / 3 / 2 / 4;
+	background-image: url(/assets/img/gallery/img2gallerybox.jpg);
+	background-size: cover; 
+		}
+.gallery_three { 
+	grid-area: 1 / 4 / 2 / 5;
+	background-image: url(/assets/img/gallery/img3gallerybox.jpg);
+	background-size: cover; 
+}
+.gallery_four { 
+	grid-area: 2 / 1 / 3 / 2;
+	background-image: url(/assets/img/gallery/img4gallerybox.jpg);
+	background-size: cover;
+}
+.gallery_five { 
+	grid-area: 2 / 2 / 3 / 3;
+	background-image: url(/assets/img/gallery/img5gallerybox.jpg);
+	background-size: cover; }
+.gallery_six { 
+	grid-area: 2 / 3 / 3 / 5;
+	background-image: url(/assets/img/gallery/img6gallerybox.jpg);
+	background-size: cover; } 
+
+
+
+#gallery__link {
+			font-family: 'Open Sans', sans-serif;
+			text-transform: uppercase;
+			font-size: 0.8em;
+			box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.3);
+			border-radius: 5px;
+			padding-left: 15px;
+			padding-right: 15px;
+			padding-top: 0.9rem;
+			padding-bottom: 0.9rem;
+			gap: 12px;
+			display: flex;
+			width: 11%;
+			position: relative;
+			left: 44%;
+			margin-bottom: 4em;
+			margin-top: -1em;
+}
+
+
+.gallery__titre-p {
+    @extend .blog__titre-p;
+}
+
+.section__gallery--titre {
+	color: $color_gold;
+}

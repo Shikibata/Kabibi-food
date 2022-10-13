@@ -1,0 +1,44 @@
+// @use "../variables" as *;
+// @import '_blog.scss';
+
+@import './blog.scss';
+
+@import "../variables.scss";
+
+.section__chefs {
+	height: 50em;
+	background: rgb(0,0,0);
+	background: radial-gradient(circle, rgba(0,0,0,0.7693277994791666) 0%, rgba(0,0,0,1) 100%); 	
+    
+		
+	}
+
+	.section__chefs--titre{
+		@extend .section--titre;
+		color: rgb(72, 72, 72);
+	}
+
+	.section__h2 {
+		color: white;
+	}
+
+	.section__p {
+		color: white;
+	}
+
+	.container__chefs {
+		display: grid;
+		grid-template-columns: repeat(4,min-content);
+		grid-gap: 2.5rem;
+		place-content: center;
+		
+
+		img {
+			width: 16rem;
+		}
+	}
+
+.chefs__titre-p {
+    @extend .blog__titre-p;
+    color: white;
+}
