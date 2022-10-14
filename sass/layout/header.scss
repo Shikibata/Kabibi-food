@@ -2,7 +2,7 @@
 
 
 header {
-    background-color: grey;
+    
     height: 40rem;
     width: 100%;
     display: flex;
@@ -52,14 +52,11 @@ header {
         color: white;
         align-items: center;
 
-        #menu-toggle {
-            display: none;
+        // #menu-toggle {
+        //     display: none;
         
-        }
+        // }
 
-        #menu-toggle:checked + #list__header {
-            display: block;
-          }
 
 
         .header__nav-icon  {
@@ -91,9 +88,7 @@ header {
             
         }
 
-        .fa-bars {
-            position: absolute;
-            left: 4rem;
+        .hamburger-icon {
             display: none;
         }
         
@@ -175,9 +170,9 @@ header {
             .header__card-text--logo {
                 margin-right: 8rem;
                 padding-bottom: 1.5rem;
-                position: absolute;
-                left: 31rem;
-                bottom: 32.1rem;
+                position: relative;
+                left: 0rem;
+                bottom: 1.1rem;
             }
         }
 
@@ -232,11 +227,15 @@ header {
         display: none!important;
     }
 
+    // #list__header {
+    //     position: relative;
+    //     top: 16rem;
+    //     left: -10rem;
+    //     display: none!important;
+    // }
+
     #list__header {
-        position: relative;
-        top: 16rem;
-        left: -10rem;
-        display: flex;
+        display: flex!important;
         flex-direction: column;
         justify-content: flex-start;
         background-color: black;
@@ -247,14 +246,25 @@ header {
         border-radius: 8px;
         padding-top: 1rem;
         padding-bottom: 1rem;
+        opacity: 0;
     }
 
-    .fa-bars {
+    #menu-toggle:checked + #list__header {
+        opacity: 1;
+
+      }
+
+    .hamburger-icon {
         display: block!important;
-        color: $color_gold ;
         position: absolute;
+        left: 4rem;
+        
 
-
+        // .hamburger-icon:hover {
+        //     color: $color_gold!important;
+        //     cursor: pointer!important;
+        // }
+    
     }
 
     
@@ -268,6 +278,12 @@ header {
 
 }
 
+@media (max-width: 733px) {
+        .header__card-text--logo {
+            display: none;
+        }
+
+}
 
 
 @media (max-width: 600px) {
