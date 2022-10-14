@@ -2,6 +2,11 @@
 
 @import "../variables.scss";
 
+@font-face {
+    font-family: 'Mondia Thin';
+    src: url(/assets/font/MondiaThin.otf);
+}
+
 .section__blog {
 
 	.list-brand {

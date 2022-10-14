@@ -42,13 +42,9 @@
             gap: 2.5rem;
 
             .section__why--container--imgBox {
-                height: 22rem;
-                width: 17rem;
+                width: 19%;
 
-                .section__why--container--img {
-                    height: 100%;
-                    width: 100%;
-                }
+            
 
             }
 
@@ -59,7 +55,7 @@
                 height: 20rem;
                 gap: 1.5rem;
                 padding-top: 3.5rem;
-                max-width: 20rem;
+                width: 19%;
 
 
                 .section__why--container--textBoxtext {
@@ -95,3 +91,31 @@
     top: -10.9rem;
     right: -70.9rem;
 }
+
+@media (max-width: 1100px) {
+    .section__why--topRightImg {
+        display: hidden;
+    }
+
+    .section__why--container--textBox {
+        width: 40%!important;
+    }
+}
+
+@media (max-width: 700px) {
+    .section__why--container {
+        position: relative;
+        left: 3rem;
+    }
+}
+
+@media (max-width: 640px) {
+    
+    
+
+    .section__why--container--textBox {
+        width: 40%!important;
+    }
+
+}
+
