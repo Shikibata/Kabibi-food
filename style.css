@@ -538,6 +538,9 @@ nav .header__nav--contact .fa-phone {
   text-decoration: none;
   width: 45%;
 }
+.container__article article button:hover {
+  background-color: hsl(40deg, 46%, 60%);
+}
 
 .blog__titre-p, .chefs__titre-p, .gallery__titre-p, .section__offer .section__offer--p, .section__why .section__why--p, .section__category .section__category--bg .section__category--p {
   display: flex;
@@ -784,6 +787,9 @@ nav .header__nav--contact .fa-phone {
   text-decoration: none;
   width: 45%;
 }
+.container__article article button:hover {
+  background-color: hsl(40deg, 46%, 60%);
+}
 
 .blog__titre-p, .chefs__titre-p, .gallery__titre-p, .section__offer .section__offer--p, .section__why .section__why--p, .section__category .section__category--bg .section__category--p {
   display: flex;
@@ -997,6 +1003,9 @@ nav .header__nav--contact .fa-phone {
   margin-bottom: 20px;
   text-decoration: none;
   width: 45%;
+}
+.container__article article button:hover {
+  background-color: hsl(40deg, 46%, 60%);
 }
 
 .blog__titre-p, .chefs__titre-p, .gallery__titre-p, .section__offer .section__offer--p, .section__category .section__category--bg .section__category--p, .section__why .section__why--p {
@@ -1219,6 +1228,9 @@ nav .header__nav--contact .fa-phone {
   text-decoration: none;
   width: 45%;
 }
+.container__article article button:hover {
+  background-color: hsl(40deg, 46%, 60%);
+}
 
 .blog__titre-p, .chefs__titre-p, .gallery__titre-p, .section__category .section__category--bg .section__category--p, .section__why .section__why--p, .section__offer .section__offer--p {
   display: flex;
@@ -1345,6 +1357,9 @@ nav .header__nav--contact .fa-phone {
   text-decoration: none;
   width: 45%;
 }
+.container__article article button:hover {
+  background-color: hsl(40deg, 46%, 60%);
+}
 
 .blog__titre-p, .chefs__titre-p, .gallery__titre-p, .section__category .section__category--bg .section__category--p, .section__why .section__why--p, .section__offer .section__offer--p {
   display: flex;
@@ -1433,62 +1448,62 @@ nav .header__nav--contact .fa-phone {
 
 .gallery_one {
   grid-area: 1/1/2/3;
-  background: url(/assets/img/gallery/img1gallerybox.jpg);
+  background: url("./img/gallery/img1gallerybox.jpg");
   background-size: cover;
 }
 
 .gallery_two {
   grid-area: 1/3/2/4;
-  background-image: url(/assets/img/gallery/img2gallerybox.jpg);
+  background-image: url("./img/gallery/img2gallerybox.jpg");
   background-size: cover;
 }
 
 .gallery_three {
   grid-area: 1/4/2/5;
-  background-image: url(/assets/img/gallery/img3gallerybox.jpg);
+  background-image: url("./img/gallery/img3gallerybox.jpg");
   background-size: cover;
 }
 
 .gallery_four {
   grid-area: 2/1/3/2;
-  background-image: url(/assets/img/gallery/img4gallerybox.jpg);
+  background-image: url("./img/gallery/img4gallerybox.jpg");
   background-size: cover;
 }
 
 .gallery_five {
   grid-area: 2/2/3/3;
-  background-image: url(/assets/img/gallery/img5gallerybox.jpg);
+  background-image: url("./img/gallery/img5gallerybox.jpg");
   background-size: cover;
 }
 
 .gallery_six {
   grid-area: 2/3/3/5;
-  background-image: url(/assets/img/gallery/img6gallerybox.jpg);
+  background-image: url("./img/gallery/img6gallerybox.jpg");
   background-size: cover;
 }
 
 .gallery_one:hover {
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 99%), url("/assets/img/gallery/img1gallerybox.jpg");
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 99%), url("./img/gallery/img1gallerybox.jpg");
 }
 
 .gallery_two:hover {
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 99%), url("/assets/img/gallery/img2gallerybox.jpg");
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 99%), url("./img/gallery/img2gallerybox.jpg");
 }
 
 .gallery_three:hover {
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 99%), url("/assets/img/gallery/img3gallerybox.jpg");
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 99%), url("./img/gallery/img3gallerybox.jpg");
 }
 
 .gallery_four:hover {
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 99%), url("/assets/img/gallery/img4gallerybox.jpg");
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 99%), url("./img/gallery/img4gallerybox.jpg");
 }
 
 .gallery_five:hover {
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 99%), url("/assets/img/gallery/img5gallerybox.jpg");
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 99%), url("./img/gallery/img5gallerybox.jpg");
 }
 
 .gallery_six:hover {
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 99%), url("/assets/img/gallery/img6gallerybox.jpg");
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 99%), url("./img/gallery/img6gallerybox.jpg");
 }
 
 #gallery__link {
@@ -1639,6 +1654,9 @@ nav .header__nav--contact .fa-phone {
   margin-bottom: 20px;
   text-decoration: none;
   width: 45%;
+}
+.container__article article button:hover {
+  background-color: hsl(40deg, 46%, 60%);
 }
 
 .blog__titre-p, .chefs__titre-p, .section__category .section__category--bg .section__category--p, .section__why .section__why--p, .section__offer .section__offer--p, .gallery__titre-p {
