@@ -12,8 +12,7 @@
         height: 100%;
         width: 40%;
         position: relative;
-        left: 70%;
-        z-index: -0.1;
+        left: 63.5%;
         top: -32%;
 
         
@@ -21,22 +20,16 @@
 
     .section__offer--Img2{
         position: relative;
-        left: -47%;
-        top: -16%;
-        height: 80%;
-        width: 18%;
+    left: -41%;
+    top: -18%;
+    height: 80%;
+    width: 18%;
+    z-index: 1;
     }
     
 
     .section__offer--titre {
-        font-weight: 100;
-        font-size: 10.5rem;
-        line-height: 1.5;
-        width: 6em;
-        opacity: 0.1;
-        position: relative;
-        text-transform: uppercase;
-        margin-left: 1rem;
+        @extend .section--titre;
         color: $color_gold;
     }
 
@@ -48,21 +41,20 @@
             color: black;
         }
 
-        .section__h2 {
-            text-transform: uppercase;
-            font-size: xx-large;
-            color: black;
-        }
-    }
+         .section__h2 {
+             text-transform: uppercase;
+             font-size: xx-large;
+             color: black;
+         }
+     }
 
     }
 
         .section__offer--containerGrid {
-
-            
             position: relative;
-            bottom: 49rem;
-            left: 15rem;
+            top: -100%;
+            display: flex;
+            justify-content: center;
 
         .section__offer--container {
             display: grid;
@@ -116,23 +108,30 @@
             }
         }
 
-    @media screen and (max-width: 770px) {
-        .section__offer--container  {
-                    grid-template-columns: repeat(1, auto);
-                }
-            
-                .section__blog--titre {
-                    font-size: 9em;
-                }
-            .list-brand {
-                flex-wrap: wrap;
-            }
-            
-            }
-            
-            @media screen and (min-width: 771px) and (max-width: 1040px) {
-                .container__article {
-                        display: grid;
-                        grid-template-columns: repeat(2, auto);
-                    }
-                }
+@media (max-width: 1040px) {
+
+    .section__offer--titre {
+		font-size: 6em;
+		}
+
+    .section__offer {
+        height: 70rem;
+    }
+    .section__offer--containerGrid .section__offer--container {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        place-items: center;
+    }
+
+    .section__offer--Img1 {
+        opacity: 0;        
+
+        
+    }
+
+    .section__offer--Img2{
+        display: none;
+
+    }
+}
