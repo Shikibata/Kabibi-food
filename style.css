@@ -470,13 +470,18 @@ nav .header__nav--contact .fa-phone {
   display: flex;
   justify-content: space-evenly;
   width: 80%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  font-size: 0.8em;
+  opacity: 0.7;
+  text-transform: uppercase;
 }
 .section__div--span .fa {
   color: hsl(40deg, 46%, 60%);
   padding: 0 0.3em;
 }
 
-.section--titre, .section__chefs--titre, .section__blog--titre {
+.section--titre, .section__chefs--titre, .section__offer .section__offer--titre, .section__blog--titre {
   font-weight: 100;
   font-size: 10.5rem;
   line-height: 1.5;
@@ -513,8 +518,15 @@ nav .header__nav--contact .fa-phone {
 .container__article article img {
   width: 23em;
 }
-.container__article article p, .container__article article button {
-  margin: 0em 2.2em;
+.container__article article button {
+  margin: 0em 2em;
+}
+.container__article article p {
+  font-family: "Mondia Thin";
+  text-transform: capitalize;
+  line-height: 1.4;
+  font-size: 1.2em;
+  margin: 0em 1.5em;
 }
 .container__article article button {
   background-color: white;
@@ -604,11 +616,10 @@ nav .header__nav--contact .fa-phone {
 .section__category .section__category--containerArticle {
   display: grid;
   grid-template-columns: repeat(6, auto);
-  gap: 0.5rem;
+  gap: 1.5em;
   margin-top: 2rem;
   margin-bottom: 16rem;
-  margin-left: 10rem;
-  margin-right: 10rem;
+  place-content: center;
 }
 .section__category .section__category--containerArticle .section__category--article {
   background-color: white;
@@ -671,18 +682,15 @@ nav .header__nav--contact .fa-phone {
 }
 @media (max-width: 1100px) {
   .section__category--containerArticle {
-    display: grid !important;
     grid-template-columns: 1fr 1fr 1fr !important;
-    margin-left: 12rem;
+    place-items: center !important;
+    margin-bottom: 6em !important;
   }
 }
 @media (max-width: 700px) {
   .section__category--containerArticle {
-    display: grid !important;
     grid-template-columns: 1fr 1fr !important;
-    margin-left: 10rem !important;
-    position: relative;
-    left: -4rem;
+    place-items: center !important;
   }
   .section__category--containerImage {
     display: none !important;
@@ -708,13 +716,18 @@ nav .header__nav--contact .fa-phone {
   display: flex;
   justify-content: space-evenly;
   width: 80%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  font-size: 0.8em;
+  opacity: 0.7;
+  text-transform: uppercase;
 }
 .section__div--span .fa {
   color: hsl(40deg, 46%, 60%);
   padding: 0 0.3em;
 }
 
-.section--titre, .section__chefs--titre, .section__blog--titre {
+.section--titre, .section__chefs--titre, .section__offer .section__offer--titre, .section__blog--titre {
   font-weight: 100;
   font-size: 10.5rem;
   line-height: 1.5;
@@ -751,8 +764,15 @@ nav .header__nav--contact .fa-phone {
 .container__article article img {
   width: 23em;
 }
-.container__article article p, .container__article article button {
-  margin: 0em 2.2em;
+.container__article article button {
+  margin: 0em 2em;
+}
+.container__article article p {
+  font-family: "Mondia Thin";
+  text-transform: capitalize;
+  line-height: 1.4;
+  font-size: 1.2em;
+  margin: 0em 1.5em;
 }
 .container__article article button {
   background-color: white;
@@ -910,13 +930,18 @@ nav .header__nav--contact .fa-phone {
   display: flex;
   justify-content: space-evenly;
   width: 80%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  font-size: 0.8em;
+  opacity: 0.7;
+  text-transform: uppercase;
 }
 .section__div--span .fa {
   color: hsl(40deg, 46%, 60%);
   padding: 0 0.3em;
 }
 
-.section--titre, .section__chefs--titre, .section__blog--titre {
+.section--titre, .section__chefs--titre, .section__offer .section__offer--titre, .section__blog--titre {
   font-weight: 100;
   font-size: 10.5rem;
   line-height: 1.5;
@@ -953,8 +978,15 @@ nav .header__nav--contact .fa-phone {
 .container__article article img {
   width: 23em;
 }
-.container__article article p, .container__article article button {
-  margin: 0em 2.2em;
+.container__article article button {
+  margin: 0em 2em;
+}
+.container__article article p {
+  font-family: "Mondia Thin";
+  text-transform: capitalize;
+  line-height: 1.4;
+  font-size: 1.2em;
+  margin: 0em 1.5em;
 }
 .container__article article button {
   background-color: white;
@@ -1012,26 +1044,18 @@ nav .header__nav--contact .fa-phone {
   height: 100%;
   width: 40%;
   position: relative;
-  left: 70%;
-  z-index: -0.1;
+  left: 63.5%;
   top: -32%;
 }
 .section__offer .section__offer--Img2 {
   position: relative;
-  left: -47%;
-  top: -16%;
+  left: -41%;
+  top: -18%;
   height: 80%;
   width: 18%;
+  z-index: 1;
 }
 .section__offer .section__offer--titre {
-  font-weight: 100;
-  font-size: 10.5rem;
-  line-height: 1.5;
-  width: 6em;
-  opacity: 0.1;
-  position: relative;
-  text-transform: uppercase;
-  margin-left: 1rem;
   color: hsl(40deg, 46%, 60%);
 }
 .section__offer .section__offer--p {
@@ -1048,8 +1072,9 @@ nav .header__nav--contact .fa-phone {
 
 .section__offer--containerGrid {
   position: relative;
-  bottom: 49rem;
-  left: 15rem;
+  top: -100%;
+  display: flex;
+  justify-content: center;
 }
 .section__offer--containerGrid .section__offer--container {
   display: grid;
@@ -1086,21 +1111,24 @@ nav .header__nav--contact .fa-phone {
   font-weight: 50;
 }
 
-@media screen and (max-width: 770px) {
-  .section__offer--container {
-    grid-template-columns: repeat(1, auto);
+@media (max-width: 1040px) {
+  .section__offer--titre {
+    font-size: 6em;
   }
-  .section__blog--titre {
-    font-size: 9em;
+  .section__offer {
+    height: 70rem;
   }
-  .list-brand {
-    flex-wrap: wrap;
-  }
-}
-@media screen and (min-width: 771px) and (max-width: 1040px) {
-  .container__article {
+  .section__offer--containerGrid .section__offer--container {
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: 1fr;
+    width: 100%;
+    place-items: center;
+  }
+  .section__offer--Img1 {
+    opacity: 0;
+  }
+  .section__offer--Img2 {
+    display: none;
   }
 }
 @font-face {
@@ -1123,13 +1151,18 @@ nav .header__nav--contact .fa-phone {
   display: flex;
   justify-content: space-evenly;
   width: 80%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  font-size: 0.8em;
+  opacity: 0.7;
+  text-transform: uppercase;
 }
 .section__div--span .fa {
   color: hsl(40deg, 46%, 60%);
   padding: 0 0.3em;
 }
 
-.section--titre, .section__chefs--titre, .section__blog--titre {
+.section--titre, .section__chefs--titre, .section__blog--titre, .section__offer .section__offer--titre {
   font-weight: 100;
   font-size: 10.5rem;
   line-height: 1.5;
@@ -1166,8 +1199,15 @@ nav .header__nav--contact .fa-phone {
 .container__article article img {
   width: 23em;
 }
-.container__article article p, .container__article article button {
-  margin: 0em 2.2em;
+.container__article article button {
+  margin: 0em 2em;
+}
+.container__article article p {
+  font-family: "Mondia Thin";
+  text-transform: capitalize;
+  line-height: 1.4;
+  font-size: 1.2em;
+  margin: 0em 1.5em;
 }
 .container__article article button {
   background-color: white;
@@ -1237,13 +1277,18 @@ nav .header__nav--contact .fa-phone {
   display: flex;
   justify-content: space-evenly;
   width: 80%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  font-size: 0.8em;
+  opacity: 0.7;
+  text-transform: uppercase;
 }
 .section__div--span .fa {
   color: hsl(40deg, 46%, 60%);
   padding: 0 0.3em;
 }
 
-.section--titre, .section__chefs--titre, .section__blog--titre {
+.section--titre, .section__chefs--titre, .section__blog--titre, .section__offer .section__offer--titre {
   font-weight: 100;
   font-size: 10.5rem;
   line-height: 1.5;
@@ -1280,8 +1325,15 @@ nav .header__nav--contact .fa-phone {
 .container__article article img {
   width: 23em;
 }
-.container__article article p, .container__article article button {
-  margin: 0em 2.2em;
+.container__article article button {
+  margin: 0em 2em;
+}
+.container__article article p {
+  font-family: "Mondia Thin";
+  text-transform: capitalize;
+  line-height: 1.4;
+  font-size: 1.2em;
+  margin: 0em 1.5em;
 }
 .container__article article button {
   background-color: white;
@@ -1520,13 +1572,18 @@ nav .header__nav--contact .fa-phone {
   display: flex;
   justify-content: space-evenly;
   width: 80%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  font-size: 0.8em;
+  opacity: 0.7;
+  text-transform: uppercase;
 }
 .section__div--span .fa {
   color: hsl(40deg, 46%, 60%);
   padding: 0 0.3em;
 }
 
-.section--titre, .section__chefs--titre, .section__blog--titre {
+.section--titre, .section__chefs--titre, .section__blog--titre, .section__offer .section__offer--titre {
   font-weight: 100;
   font-size: 10.5rem;
   line-height: 1.5;
@@ -1563,8 +1620,15 @@ nav .header__nav--contact .fa-phone {
 .container__article article img {
   width: 23em;
 }
-.container__article article p, .container__article article button {
-  margin: 0em 2.2em;
+.container__article article button {
+  margin: 0em 2em;
+}
+.container__article article p {
+  font-family: "Mondia Thin";
+  text-transform: capitalize;
+  line-height: 1.4;
+  font-size: 1.2em;
+  margin: 0em 1.5em;
 }
 .container__article article button {
   background-color: white;
